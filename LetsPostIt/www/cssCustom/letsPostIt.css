@@ -1,0 +1,70 @@
+﻿.appHeader {
+    background: #333333;
+    color: white;
+    height: 50px;
+    width: 100vw;
+    margin: 0px;
+    font-size: 22px;
+    padding: 10px 7px 5px 4px;
+}
+
+.shortPostIt {
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #333333;
+    font-weight: 100;
+    /*padding: 4px 4px 2px 4px;*/
+    display: table;
+}
+
+.noMargin {
+    margin: 0px;
+}
+
+.noPadding {
+    padding: 0px;
+}
+
+.fullWidth {
+    width: 100vw;
+}
+
+.verticalCenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    line-height: 22px;
+}
+
+.fullHeightWithHeader {
+    height: calc(100vh - 50px);
+}
+
+.scrollOverflow {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.pointerCursor {
+    cursor: pointer;
+}
+
+.fontSize22 {
+    font-size: 22px;
+}
+
+.marginTop4 {
+    margin-top: 4px;
+}
+
+.diplayTableCell {
+    display: table-cell;
+}
+
+.ntoBr {
+    white-space: pre-wrap;
+}
+
+.debugBackground {
+    background: red;
+}

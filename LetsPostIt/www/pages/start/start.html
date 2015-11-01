@@ -1,0 +1,17 @@
+﻿<div class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin noPadding">
+    <!-- New Post It -->
+    <div class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin appHeader">
+        <span ng-click="goToNewPostIt()" class="glyphicon glyphicon-plus col-md-1 col-xs-1 col-sm-1 pointerCursor"></span><label class="col-md-10, col-sm-10 col-xs-10 text-center"> Let's Post it </label>
+    </div>
+    <!-- Post It List -->
+    <div ng-if="postItList != undefined && postItList != null && postItList.length > 0" class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin noPadding fullHeightWithHeader scrollOverflow">
+        <div class="col-md-12 col-sm-12 col-xs-12 noPadding" ng-repeat="postIt in postItList | orderBy : 'creationDate'">
+            <div postit-start-page-short></div>
+        </div>
+    </div>
+
+    <!-- Default -->
+    <div ng-if="postItList == undefined || postItList == null || postItList.length == 0" class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin text-center verticalCenter fullHeightWithHeader">
+        No post It
+    </div>
+</div>

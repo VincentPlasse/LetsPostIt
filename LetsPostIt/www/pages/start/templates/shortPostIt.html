@@ -1,0 +1,9 @@
+﻿<div class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin shortPostIt">
+    <div ng-click="goToExisitingPostIt(postIt)" class="col-md-11 col-sm-11 col-xs-11 noMargin noPadding diplayTableCell">
+        <label class="col-md-12 col-sm-12 col-xs-12 noPadding">{{formatDate(postIt.creationDate)}}</label><br />
+        <div class="col-md-12 col-sm-12 col-xs-12 noPadding ntoBr">{{postIt.text}}</div><br />
+    </div>
+    <div ng-click="deletePostIt(postIt)" class="col-md-1 col-sm-1 col-xs-1 noMargin noPadding text-center verticalCenter fontSize22 diplayTableCell">
+        <span class="glyphicon glyphicon-remove col-md-12 col-sm-12 col-xs-12 fontSize22 text-center verticalCenter noPadding pointerCursor"></span>
+    </div>
+</div>

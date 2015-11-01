@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="letsPostIt">
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>LetsPostIt</title>
+
+    <!-- LetsPostIt references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="cssCustom/letsPostIt.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Windows Plugin for jquery/angular execution -->
+    <script src="js/winstore-jscompat.js"></script>
+
+    <!-- AngularJS -->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+
+    <!-- external scripts -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/sjcl.js"></script>
+    <!--<script src="js/bootstrap.js"></script>-->
+
+    <!-- custom scripts -->
+    <!-- global -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/directives.js"></script>
+    <script src="scripts/utils.js"></script>
+    <!-- services -->
+    <script src="scripts/services/localStorageService.js"></script>
+    <script src="scripts/services/postItService.js"></script>
+    <!-- page controllers -->
+    <script src="pages/start/startController.js"></script>
+    <script src="pages/postIt/postItController.js"></script>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+
+    <div class="container-fluid row col-md-12 col-xs-12 col-sm-12 fullWidth noMargin noPadding">
+
+        <ng-view class="col-md-12 col-sm-12 col-xs-12 fullWidth noMargin noPadding"></ng-view>
+    </div>
+</body>
+</html>
